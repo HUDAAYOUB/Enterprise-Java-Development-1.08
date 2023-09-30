@@ -1,16 +1,16 @@
 package com.lab3.Q4;
 
 public class IntArrayList implements IIntList {
-    private int[] array;
+    private int[] array ;
     private int size;
 
-    public IntArrayList(int[] array) {
-        this.array = array;
+    public IntArrayList() {
+        array = new int[10];
         this.size = 0;
     }
 
     public int[] getArray() {
-        return this.array;
+        return array;
     }
 
     public void setArray(int[] array) {
@@ -38,17 +38,18 @@ public class IntArrayList implements IIntList {
 
             }
         } else {
-            System.out.println("There is an error" + number);
+//            System.out.println("There is an error" + number);
             array[size] = number;
             size++;
         }
 
 
+
     }
 
+    @Override
+    public int get(int j){
+        return 1;
 
-        @Override
-        public int get ( int id){
-            return id;
         }
 }
